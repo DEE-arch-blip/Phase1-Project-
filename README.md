@@ -1,6 +1,4 @@
-# Phase1-Project-
 
-#  Aviation Accident Analysis  
 ##  Aviation Risk Analysis for Aircraft Investment  
 
 ###  Introduction  
@@ -70,10 +68,25 @@ The columns were as follows
 | Report.Status               | Object    | Status of the investigation report       |
 | Publication.Date            | Object    | Date the report was published            |
 # Data Cleaning & Preparation
+Data was loaded using pandas also other libraries such as matplotlib ,seaborn and numpy were imported,The code below shows how the libraries were imported and also how the aviation data was loaded for cleaning and analysis
+```python
+# Import necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the dataset
+df = pd.read_csv("data/aviation_data.csv")
+
+# Display first few rows
+df.head()
+```
+
 
 To ensure data consistency and improve the quality of insights, the dataset underwent several cleaning and preprocessing steps.
 
-📌 **Identifying Data Types
+ **Identifying Data Types
 
 The dataset was divided into numerical and categorical columns to facilitate appropriate handling.
 
@@ -85,25 +98,30 @@ Number.of.Engines, Total.Fatal.Injuries, Total.Serious.Injuries, Total.Minor.Inj
 
 Event.Id, Investigation.Type, Accident.Number, Event.Date, Location, Country, Airport.Code, Airport.Name, Injury.Severity, Aircraft.Damage, Aircraft.Category, Registration.Number, Make, Model, Amateur.Built, Engine.Type, FAR.Description, Schedule, Purpose.of.Flight, Air.Carrier, Weather.Condition, Broad.Phase.of.Flight, Report.Status, Publication.Date
 
-📌*Handling Missing Values
+**Numerical Data cleaning 
 
-Numerical Columns: Missing values were filled using the median to prevent skewing the dataset.
+ *Misiing values
 
-Categorical Columns: Missing values were replaced with "unknown" to retain relevant records and prevent data loss.
+Missing values were filled using the median to prevent skewing the dataset.
 
-📌 *Outlier Removal
+ *Outlier Removal
 
 The IQR (Interquartile Range) method was applied to detect and remove outliers from numerical columns. This ensures that extreme values do not distort the overall analysis.
 
-📌 **Categorical Data Cleaning
+ **Categorical Data Cleaning
 
-All text data was converted to lowercase for uniformity.
+-All text data was converted to lowercase for uniformity.
 
--Irrelevant columns such as Event.Id, Accident.Number, Publication.Date, Amateur.Built, and other redundant fields were dropped to focus on -meaningful insights.
+-Categorical Columns: Missing values were replaced with "unknown" to retain relevant records and prevent data loss.
+
+-Irrelevant columns such as Event.Id, Accident.Number, Publication.Date, Amateur.Built,schedule,Air carrier were dropped.
 
 -Latitude and Longitude were converted to numeric values, and missing values were filled with 0 to maintain data integrity.
 
 -Categorical columns were converted to the category data type to optimize memory usage and improve processing efficiency.
+
+-The categorical and numerical columns were combined using the concatenation method for further analysis.
+
 **The cleaned data was saved and can be viewed through this link https://github.com/DEE-arch-blip/Phase1-Project-/blob/4c1ec305fc0bd318084136a6c8876d394b9ea342/project.ipynb/cleaned_data.csv
 
  ## Data Analysis & Visualizations  
@@ -141,7 +159,7 @@ Key visualizations include:
 
 ---
 # Dasboards Visualization 
-![Visualization: Aircraft accident rates by make,model and injury severity] (https://github.com/DEE-arch-blip/Phase1-Project-/blob/4c1ec305fc0bd318084136a6c8876d394b9ea342/images/Tablue%20Dashboard.png)
+![Visualization: Aircraft accident rates by make,model and injury severity] (https://github.com/DEE-arch-blip/Phase1-Project-/blob/master/images/Tablue%20Dashboard.png) 
 
 ![Visualization:purpose of flight and accident location] (https://github.com/DEE-arch-blip/Phase1-Project-/blob/master/images/tablue%20dasboard2.png)
 ![Visualization, number of engine, trends and broad phase ] (https://github.com/DEE-arch-blip/Phase1-Project-/blob/master/images/tablue%20dashboard%203.png)
