@@ -159,10 +159,10 @@ Key visualizations include:
 
 ---
 # Dasboards Visualization 
-![Visualization: Aircraft accident rates by make,model and injury severity] (https://github.com/DEE-arch-blip/Phase1-Project-/blob/master/images/Tablue%20Dashboard.png) 
+![Visualization: Aircraft accident rates by make,model and injury severity] (https://github.com/DEE-arch-blip/Phase1-Project-/blob/master/images/Tablue%20Dashboard.png?raw=true) 
 
-![Visualization:purpose of flight and accident location] (https://github.com/DEE-arch-blip/Phase1-Project-/blob/master/images/tablue%20dasboard2.png)
-![Visualization, number of engine, trends and broad phase ] (https://github.com/DEE-arch-blip/Phase1-Project-/blob/master/images/tablue%20dashboard%203.png)
+![Visualization:purpose of flight and accident location](https://github.com/DEE-arch-blip/Phase1-Project-/blob/master/images/tablue%20dasboard2.png?raw=true)
+![Visualization, number of engine, trends and broad phase ](https://github.com/DEE-arch-blip/Phase1-Project-/blob/master/images/tablue%20dashboard%203.png?raw=true)
 
 
 
