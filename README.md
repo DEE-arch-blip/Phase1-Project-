@@ -98,29 +98,29 @@ Number.of.Engines, Total.Fatal.Injuries, Total.Serious.Injuries, Total.Minor.Inj
 
 Event.Id, Investigation.Type, Accident.Number, Event.Date, Location, Country, Airport.Code, Airport.Name, Injury.Severity, Aircraft.Damage, Aircraft.Category, Registration.Number, Make, Model, Amateur.Built, Engine.Type, FAR.Description, Schedule, Purpose.of.Flight, Air.Carrier, Weather.Condition, Broad.Phase.of.Flight, Report.Status, Publication.Date
 
-**Numerical Data cleaning 
+**Numerical Data cleaning**
 
- *Misiing values
+ -Misiing values
 
 Missing values were filled using the median to prevent skewing the dataset.
 
- *Outlier Removal
+ -Outlier Removal
 
 The IQR (Interquartile Range) method was applied to detect and remove outliers from numerical columns. This ensures that extreme values do not distort the overall analysis.
 
- **Categorical Data Cleaning
+ **Categorical Data Cleaning**
 
--All text data was converted to lowercase for uniformity.
+   -All text data was converted to lowercase for uniformity.
 
--Categorical Columns: Missing values were replaced with "unknown" to retain relevant records and prevent data loss.
+   -Categorical Columns: Missing values were replaced with "unknown" to retain relevant records and prevent data loss.
 
--Irrelevant columns such as Event.Id, Accident.Number, Publication.Date, Amateur.Built,schedule,Air carrier were dropped.
+   -Irrelevant columns such as Event.Id, Accident.Number, Publication.Date, Amateur.Built,schedule,Air carrier were dropped.
 
--Latitude and Longitude were converted to numeric values, and missing values were filled with 0 to maintain data integrity.
+   -Latitude and Longitude were converted to numeric values, and missing values were filled with 0 to maintain data integrity.
 
--Categorical columns were converted to the category data type to optimize memory usage and improve processing efficiency.
+   -Categorical columns were converted to the category data type to optimize memory usage and improve processing efficiency.
 
--The categorical and numerical columns were combined using the concatenation method for further analysis.
+   -The categorical and numerical columns were combined using the concatenation method for further analysis.
 
 **The cleaned data was saved and can be viewed through this link https://github.com/DEE-arch-blip/Phase1-Project-/blob/4c1ec305fc0bd318084136a6c8876d394b9ea342/project.ipynb/cleaned_data.csv
 
