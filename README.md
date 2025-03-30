@@ -86,15 +86,15 @@ df.head()
 
 To ensure data consistency and improve the quality of insights, the dataset underwent several cleaning and preprocessing steps.
 
- **Identifying Data Types
+ **Identifying Data Types**
 
 The dataset was divided into numerical and categorical columns to facilitate appropriate handling.
 
-**Numerical Columns included:
+**Numerical Columns included**:
 
 Number.of.Engines, Total.Fatal.Injuries, Total.Serious.Injuries, Total.Minor.Injuries, Total.Uninjured, Latitude, Longitude
 
-**Categorical Columns included:
+**Categorical Columns included**:
 
 Event.Id, Investigation.Type, Accident.Number, Event.Date, Location, Country, Airport.Code, Airport.Name, Injury.Severity, Aircraft.Damage, Aircraft.Category, Registration.Number, Make, Model, Amateur.Built, Engine.Type, FAR.Description, Schedule, Purpose.of.Flight, Air.Carrier, Weather.Condition, Broad.Phase.of.Flight, Report.Status, Publication.Date
 
